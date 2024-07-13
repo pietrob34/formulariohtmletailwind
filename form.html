@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do currículo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow">
+        <h1 class="text-2xl font-bold mb-6 text-center">Cadastre seu currículo aqui</h1>
+        
+        <h2 class="text-xl font-semibold mb-4">1. Cadastro pessoal</h2>
+        <div class="mb-4">
+            <label for="nome" class="block mb-2 font-medium">Nome:</label>
+            <input type="text" name="nome" id="nome" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="endereco" class="block mb-2 font-medium">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="CEP" class="block mb-2 font-medium">CEP:</label>
+            <input type="text" name="CEP" id="CEP" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="email" class="block mb-2 font-medium">E-Mail</label>
+            <input type="email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="telefone" class="block mb-2 font-medium">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="cidade" class="block mb-2 font-medium">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="estado" class="block mb-2 font-medium">Estado:</label>
+            <select name="estado" id="estado" class="w-full p-2 border border-gray-300 rounded">
+                <option value="">Selecione</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>        
+        </div>
+
+        <div class="mb-4">
+            <label for="naturalidade" class="block mb-2 font-medium">Naturalidade</label>
+            <input type="text" name="naturalidade" id="naturalidade" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="estado_naturalidade" class="block mb-2 font-medium">Estado:</label>
+            <select name="estado_naturalidade" id="estado_naturalidade" class="w-full p-2 border border-gray-300 rounded">
+                <option value="">Selecione</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select> 
+        </div>
+
+        <div class="mb-4">
+            <label for="estado_civil" class="block mb-2 font-medium">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil" class="w-full p-2 border border-gray-300 rounded mb-2">
+                <option value="">Selecione</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viuvo">Viuvo(a)</option>
+            </select>
+            <label for="data_nascimento" class="block mb-2 font-medium">Data Nascimento:</label>
+            <input type="date" name="data_nascimento" id="data_nascimento" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">2. Escolaridade</h2>
+        
+        <div class="mb-4">
+            <label for="nivel" class="block mb-2 font-medium">Nivel:</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center">
+                    <input type="radio" name="nivel" value="ensino_medio" class="mr-2">Ensino Medio
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="nivel" value="graduação" class="mr-2"> Graduação
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="entidade_de_ensino" class="block mb-2 font-medium">Entidade de Ensino:</label>
+            <input type="text" name="entidade_de_ensino" id="entidade_de_ensino" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="Localidade" class="block mb-2 font-medium">Localidade:</label>
+            <input type="text" name="Localidade" id="Localidade" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="area_de_formacao" class="block mb-2 font-medium">Area de Formação:</label>
+            <input type="text" name="area_de_formacao" id="area_de_formacao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="ano_de_conclusao" class="block mb-2 font-medium">Ano de Conclusão:</label>
+            <input type="text" name="ano_de_conclusao" id="ano_de_conclusao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        
+        <div class="mb-4">
+            <label for="pos_graduacao" class="block mb-2 font-medium">Pós Graduação:</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center">
+                    <input type="radio" name="pos_graduacao" id="pos_graduacao" class="mr-2">Especialização/MBA
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="pos_graduacao" id="pos_graduacao" class="mr-2">Mestrado
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="pos_graduacao" id="pos_graduacao" class="mr-2">Doutorado
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="pos_graduacao" id="pos_graduacao" class="mr-2">Pós-Doutorado
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="entidade_de_ensino_pos" class="block mb-2 font-medium">Entidade de Ensino</label>
+            <input type="text" name="entidade_de_ensino_pos" id="entidade_de_ensino_pos" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="localidade_pos" class="block mb-2 font-medium">Localidade:</label>
+            <input type="text" name="localidade_pos" id="localidade_pos" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="area_de_formacao_pos" class="block mb-2 font-medium">Area de Formação:</label>
+            <input type="text" name="area_de_formacao_pos" id="area_de_formacao_pos" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="carga_horaria" class="block mb-2 font-medium">Carga Horaria:</label>
+            <input type="text" name="carga_horaria" id="carga_horaria" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="ano_de_conclusao_pos" class="block mb-2 font-medium">Ano de Conclus
+
+ão:</label>
+            <input type="text" name="ano_de_conclusao_pos" id="ano_de_conclusao_pos" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">3. Experiência Profissional</h2>
+        <div class="mb-4">
+            <label for="empresa" class="block mb-2 font-medium">Empresa:</label>
+            <input type="text" name="empresa" id="empresa" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="inicio" class="block mb-2 font-medium">Inicio (mês/ano):</label>
+            <input type="text" name="inicio" id="inicio" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="termino" class="block mb-2 font-medium">Término (mês/ano):</label>
+            <input type="text" name="termino" id="termino" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        
+        <div class="mb-4">
+            <label for="cargo" class="block mb-2 font-medium">Cargo</label>
+            <input type="text" name="cargo" id="cargo" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="area_de_atuacao" class="block mb-2 font-medium">Area de Atuação</label>
+            <input type="text" name="area_de_atuacao" id="area_de_atuacao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="descrição_de_experiencia" class="block mb-2 font-medium">Descrição de Experiência:</label>
+            <textarea name="descrição_de_experiencia" id="descrição_de_experiencia" rows="7" class="w-full p-2 border border-gray-300 rounded"></textarea>
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">4. Certificação</h2>
+
+        <div class="mb-4">
+            <label for="titulo" class="block mb-2 font-medium">Título:</label>
+            <input type="text" name="titulo" id="titulo" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="instituicao" class="block mb-2 font-medium">Instituição:</label>
+            <input type="text" name="instituicao" id="instituicao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="area_de_conhecimento" class="block mb-2 font-medium">Área de Conhecimento:</label>
+            <input type="text" name="area_de_conhecimento" id="area_de_conhecimento" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="inicio_certificado" class="block mb-2 font-medium">Início (mês/ano):</label>
+            <input type="text" name="inicio_certificado" id="inicio_certificado" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="termino_certificado" class="block mb-2 font-medium">Término (mês/ano):</label>
+            <input type="text" name="termino_certificado" id="termino_certificado" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="carga_horaria_certificado" class="block mb-2 font-medium">Carga Horária:</label>
+            <input type="text" name="carga_horaria_certificado" id="carga_horaria_certificado" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="cidade_uf" class="block mb-2 font-medium">Cidade/UF:</label>
+            <input type="text" name="cidade_uf" id="cidade_uf" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">5. Publicação</h2>
+
+        <div class="mb-4">
+            <label for="tipo_publicacao" class="block mb-2 font-medium">Tipo:</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="artigo" class="mr-2">Artigo
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="boletim" class="mr-2">Boletim
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="folheto" class="mr-2">Folheto
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="livro" class="mr-2">Livro
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="revista" class="mr-2">Revista
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="tipo_publicacao" value="outros" class="mr-2">Outros
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="area_de_conhecimento_publicacao" class="block mb-2 font-medium">Área de Conhecimento:</label>
+            <input type="text" name="area_de_conhecimento_publicacao" id="area_de_conhecimento_publicacao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="titulo_publicacao" class="block mb-2 font-medium">Título:</label>
+            <input type="text" name="titulo_publicacao" id="titulo_publicacao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <div class="mb-4">
+            <label for="fonte" class="block mb-2 font-medium">Fonte:</label>
+            <input type="text" name="fonte" id="fonte" class="w-full p-2 border border-gray-300 rounded mb-2">
+            <label for="data_de_publicacao" class="block mb-2 font-medium">Data de Publicação</label>
+            <input type="text" name="data_de_publicacao" id="data_de_publicacao" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">6. Idioma</h2>
+        <h4 class="text-lg mb-4">(Preencher 1 para fluente, 2 para pouco, 3 para razoável)</h4>
+
+        <div class="mb-4">
+            <label for="ingles" class="block mb-2 font-medium">Inglês:</label>
+            <div class="space-y-2">
+                <div>
+                    <label for="escreve_ingles" class="block mb-2">Escreve</label>
+                    <select name="escreve_ingles" id="escreve_ingles" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="fala_ingles" class="block mb-2">Fala</label>
+                    <select name="fala_ingles" id="fala_ingles" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="compreende_ingles" class="block mb-2">Compreende</label>
+                    <select name="compreende_ingles" id="compreende_ingles" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="Le_ingles" class="block mb-2">Lê</label>
+                    <select name="Le_ingles" id="Le_
+
+ingles" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>         
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="frances" class="block mb-2 font-medium">Francês:</label>
+            <div class="space-y-2">
+                <div>
+                    <label for="escreve_frances" class="block mb-2">Escreve</label>
+                    <select name="escreve_frances" id="escreve_frances" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="fala_frances" class="block mb-2">Fala</label>
+                    <select name="fala_frances" id="fala_frances" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="compreende_frances" class="block mb-2">Compreende</label>
+                    <select name="compreende_frances" id="compreende_frances" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="le_frances" class="block mb-2">Lê</label>
+                    <select name="le_frances" id="le_frances" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>         
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="espanhol" class="block mb-2 font-medium">Espanhol:</label>
+            <div class="space-y-2">
+                <div>
+                    <label for="escreve_espanhol" class="block mb-2">Escreve</label>
+                    <select name="escreve_espanhol" id="escreve_espanhol" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="fala_espanhol" class="block mb-2">Fala</label>
+                    <select name="fala_espanhol" id="fala_espanhol" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="compreende_espanhol" class="block mb-2">Compreende</label>
+                    <select name="compreende_espanhol" id="compreende_espanhol" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="le_espanhol" class="block mb-2">Lê</label>
+                    <select name="le_espanhol" id="le_espanhol" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>         
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-xl font-semibold mb-4">7. Interesse Profissional</h2>
+        <h4 class="text-lg mb-4">Faça uma breve dissertação. Item opcional</h4>
+
+        <div class="mb-4">
+            <textarea name="interesse" id="interesse" rows="7" class="w-full p-2 border border-gray-300 rounded" placeholder="Por que você escolheu nossa empresa?"></textarea>
+        </div>
+    </div>
+</body>
+</html>
